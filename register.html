@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/login/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/index/nav-logo.png"
+      type="image/x-icon"
+    />
+    <title>NutriVisionAi &mdash; Sign Up Page</title>
+  </head>
+  <body>
+    <main>
+      <section class="box">
+        <div class="form login-form-container">
+          <form class="login-form" id="registerForm">
+            <h1>Sign Up</h1>
+            
+            <div class="input-group">
+              <label for="register-input-name">Full Name</label>
+              <input
+                id="register-input-name"
+                type="text"
+                placeholder="Enter your full name"
+                required
+                autocomplete="name"
+              />
+              <span class="error-message" id="name-error">Please enter your name</span>
+            </div>
+
+            <div class="input-group">
+              <label for="register-input-email">Email Address</label>
+              <input
+                id="register-input-email"
+                type="email"
+                placeholder="Enter your email"
+                required
+                autocomplete="email"
+              />
+              <span class="error-message" id="email-error">Please enter a valid email address</span>
+            </div>
+
+            <div class="input-group">
+              <label for="register-input-password">Password</label>
+              <div class="input-wrapper">
+                <input
+                  id="register-input-password"
+                  type="password"
+                  placeholder="Create a password"
+                  required
+                  autocomplete="new-password"
+                />
+              </div>
+              <span class="error-message" id="password-error">Password must be at least 8 characters</span>
+            </div>
+
+            <div class="input-group">
+              <label for="register-input-confirm-password">Confirm Password</label>
+              <div class="input-wrapper">
+                <input
+                  id="register-input-confirm-password"
+                  type="password"
+                  placeholder="Confirm your password"
+                  required
+                  autocomplete="new-password"
+                />
+              </div>
+              <span class="error-message" id="confirm-password-error">Passwords do not match</span>
+            </div>
+
+            <button class="btn" type="submit" id="register-btn">Sign Up</button>
+            <a href="index.html" class="back-to-home">Back to Homepage?</a>
+            <p class="message">
+              Already registered?
+              <a href="login.html">Sign In</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html

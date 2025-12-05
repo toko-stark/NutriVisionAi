@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/login/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/index/nav-logo.png"
+      type="image/x-icon"
+    />
+    <title>NutriVisionAi &mdash; Sign In Page</title>
+  </head>
+  <body>
+    <main>
+      <section class="box">
+        <div class="form login-form-container">
+          <form class="login-form" id="loginForm">
+            <h1>Sign In</h1>
+
+            <div class="input-group">
+              <label for="login-input-email">Email Address</label>
+              <input
+                id="login-input-email"
+                type="email"
+                placeholder="Enter your email"
+                required
+                autocomplete="email"
+              />
+              <span class="error-message" id="email-error"
+                >Please enter a valid email address</span
+              >
+            </div>
+
+            <div class="input-group">
+              <label for="login-input-password">Password</label>
+              <div class="input-wrapper">
+                <input
+                  id="login-input-password"
+                  type="password"
+                  placeholder="Enter your password"
+                  required
+                  autocomplete="current-password"
+                />
+              </div>
+              <span class="error-message" id="password-error"
+                >Password is required</span
+              >
+            </div>
+
+            <button class="btn" type="submit" id="login-btn">Log In</button>
+            <a href="index.html" class="back-to-home">Back to Homepage?</a>
+            <p class="message">
+              Don't have an account?
+              <a href="register.html">Sign Up</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
