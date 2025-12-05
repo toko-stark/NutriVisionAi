@@ -1,0 +1,112 @@
+:root {
+  --color-background-darkest: #0a0a1a;
+  --color-background-mid: #1a0a2e;
+  --color-background-card: rgba(20, 20, 40, 0.7);
+
+  --color-primary-text: #ffffff;
+  --color-secondary-text: rgba(255, 255, 255, 0.7);
+
+  --color-purple-light: #a78bfa;
+  --color-purple-dark: #8b5cf6;
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--color-purple-dark) 0%,
+    var(--color-purple-light) 100%
+  );
+  --color-border-subtle: rgba(139, 92, 246, 0.2);
+  --color-button-secondary: rgba(255, 255, 255, 0.1);
+  --color-star-rating: #fbbf24;
+}
+
+.section-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  background: var(--color-background-mid);
+  color: var(--color-primary-text);
+}
+
+.section-title {
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-secondary-text);
+  text-align: center;
+  max-width: 800px;
+}
+
+.pricing-plans {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-plan {
+  background: var(--color-background-card);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 16px;
+  padding: 30px;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.pricing-plan-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.pricing-plan-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-purple-light);
+}
+
+.pricing-plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan-feature {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan-feature ion-icon {
+  font-size: 1.5rem;
+  color: var(--color-purple-light);
+}
+
+.plan-feature p {
+  margin: 0;
+}
+
+.btn-pricing {
+  text-decoration: none;
+  margin-top: 10px;
+}

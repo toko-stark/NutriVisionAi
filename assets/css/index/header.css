@@ -1,0 +1,105 @@
+:root {
+  --color-background-darkest: #0a0a1a;
+  --color-background-mid: #1a0a2e;
+  --color-background-card: rgba(20, 20, 40, 0.7);
+
+  --color-primary-text: #ffffff;
+  --color-secondary-text: rgba(255, 255, 255, 0.7);
+
+  --color-purple-light: #a78bfa;
+  --color-purple-dark: #8b5cf6;
+
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--color-purple-dark) 0%,
+    var(--color-purple-light) 100%
+  );
+  --color-border-subtle: rgba(139, 92, 246, 0.2);
+  --color-button-secondary: rgba(255, 255, 255, 0.1);
+  --color-star-rating: #fbbf24;
+}
+
+.header {
+  z-index: 1000;
+  position: fixed;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.nav-bar {
+  width: 90%;
+  max-width: 1200px;
+  padding: 14px;
+  border-radius: 44px;
+  background-color: rgba(20, 20, 40, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+.logo-txt {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  margin-left: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: var(--color-primary-text);
+  font-size: 20px;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--color-purple-light);
+  border-bottom: 2px solid var(--color-purple-light);
+}
+
+.nav-link.link-login {
+  padding: 12px 18px;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 999px;
+  background: var(--gradient-primary);
+  color: var(--color-primary-text);
+  transition: filter 0.2s ease;
+  margin-right: 10px;
+}
+
+.nav-link.link-login:hover,
+.nav-link.link-login:active {
+  filter: brightness(1.1);
+}
